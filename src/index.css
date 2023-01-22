@@ -1,0 +1,76 @@
+body{
+    margin:0px;
+}
+*{
+    text-align: center;
+}
+#root{
+    background-color:#6EF9F5;
+    margin:40px;
+    padding:30px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4B9B99;
+    font-family: Karla;
+}
+.App--Title{
+    font-family: Inter;
+}
+.App--Desc{
+    margin: 0px 500px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.HexD--Hex{
+    background-color:#5ABCB9;
+    text-align: center;
+    padding:60px;
+    color:#7BFAF6;
+    border-radius: 20px;;
+    font-size: 70px;
+    line-height: 0px;
+    width:60vw;
+    margin:20px;
+}
+.HexD--Input{
+    border:none;
+    border-radius: 5px;
+    width:200px;
+    height:20px;
+}
+.HexD--Submit{
+    background-color: #3de4c5;
+    color: #e6fffe;
+    border:none;
+    border-radius: 5px;
+    width:150px;
+    height:30px;
+    margin-bottom: 10px;
+}
+.HexD--Submit:active{
+    margin-left:3px;
+    margin-top:-3px;
+    margin-bottom: 13px;;
+}
+.HexD--Correctness{
+    text-align: center;
+    padding:20px;
+    color:white;
+    border-radius: 5px;;
+    font-size: 20px;
+    line-height: 0px;
+    width:30vw;
+    margin-top:10px;
+}
+.HexD--Right{
+    background-color: rgba(1, 185, 1, 0.692);
+}
+.HexD--Wrong{
+    background-color: red;
+}
