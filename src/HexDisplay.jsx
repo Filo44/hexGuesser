@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function HexDisplay({genHex}) {
     const [input,setInput]=useState("")
-    const [winAmount,setWinAmount]=useState(0)
+    const [winAmount,setWinAmount]=useState(parseInt(localStorage.getItem("wins"))||0)
     const [correctness,setCorrectness]=useState(null)
     const [hex,setHex]=useState({
         hex:"",
@@ -12,6 +12,10 @@ function HexDisplay({genHex}) {
     React.useEffect(()=>{
         setGenNewHex()
     },[])
+
+    React.useEffect(()=>{
+        localStorage.setItem("wins",winAmount)
+    },[winAmount])
 
     function setGenNewHex(){
         let [num,hex]=genHex()
