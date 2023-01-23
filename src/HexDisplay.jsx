@@ -48,7 +48,7 @@ function HexDisplay({genHex}) {
                 <h1 className='HexD--Hex'>{hex.hex}</h1>
                 <input 
                     className='HexD--Input'
-                    type="text"
+                    type="number"
                     value={input}
                     onChange={(event)=>setInput(event.target.value)}
                 />
