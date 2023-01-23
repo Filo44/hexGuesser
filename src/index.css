@@ -19,7 +19,7 @@ body{
     font-family: Inter;
 }
 .App--Desc{
-    margin: 0px 500px;
+    margin: 0px 10vw;
 }
 form{
     display:flex;
